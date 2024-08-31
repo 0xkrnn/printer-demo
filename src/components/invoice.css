@@ -1,7 +1,3 @@
-/* Overlay style */
-
-
-/* Container style */
 .container {
     display: block;
 }
@@ -9,22 +5,22 @@
 /* Header style */
 .header {
     text-align: center;
+    margin: unset;
 }
-
 
 /* Title style */
 .title {
     border-bottom: 2px solid blue;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    font-size: 2rem;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+    font-size: 1.5rem;
 }
 
 /* Split container style */
 .splitContainer {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     line-height: 5px;
 }
 
@@ -40,7 +36,7 @@
 
 /* Table container style */
 .tableContainer {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 /* Table style */
@@ -60,7 +56,7 @@
 /* Table cell style */
 .td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 2px;
 }
 
 /* Total style */
@@ -99,7 +95,7 @@
 /* Button style */
 .button {
     display: block;
-    margin: 20px auto 0;
+    margin: 5px auto 0;
     padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
@@ -125,16 +121,15 @@
 
 @media print {
     body {
-        margin: 0;
+        margin: 10px;
         /* B5 height */
     }
 
     .container {
         padding: 0;
-        width: 176mm;
-        height: 250mm;
+        max-width: 176mm;
+        max-height: 250mm;
         margin: 0;
-        padding: 0;
         box-shadow: none;
     }
 }

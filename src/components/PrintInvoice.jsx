@@ -40,47 +40,6 @@ const PrintInvoice = ({ amount, remarks, onClose, invoiceDetails, rows }) => {
         darning : 100,
         remarks : 'demo',
         total : 1100
-    },
-    {
-        itemName : 'demo',
-        process : 'Darning',
-        quantity : 10,
-        rate : 100,
-        darning : 100,
-        remarks : 'demo',
-        total : 1100
-    },{
-        itemName : 'demo',
-        process : 'Darning',
-        quantity : 10,
-        rate : 100,
-        darning : 100,
-        remarks : 'demo',
-        total : 1100
-    },{
-        itemName : 'demo',
-        process : 'Darning',
-        quantity : 10,
-        rate : 100,
-        darning : 100,
-        remarks : 'demo',
-        total : 1100
-    },{
-        itemName : 'demo',
-        process : 'Darning',
-        quantity : 10,
-        rate : 100,
-        darning : 100,
-        remarks : 'demo',
-        total : 1100
-    },{
-        itemName : 'demo',
-        process : 'Darning',
-        quantity : 10,
-        rate : 100,
-        darning : 100,
-        remarks : 'demo',
-        total : 1100
     }]
     const getTotalSum = () => {
         return 1000
@@ -92,10 +51,10 @@ const PrintInvoice = ({ amount, remarks, onClose, invoiceDetails, rows }) => {
         <div  className="printContainer">
             <div ref={invoiceComponentRef}>
                 <div className="container">
-                    {/* <div className="header">
+                    <div className="header">
                         <h1>TRIPLEX DRY CLEANING</h1>
                         <h2 className="title">Invoice</h2>
-                    </div> */}
+                    </div> 
                     <div className="splitContainer">
                         <table className="leftColumn">
                             <p><strong>Bill To:</strong></p>
@@ -150,7 +109,7 @@ const PrintInvoice = ({ amount, remarks, onClose, invoiceDetails, rows }) => {
                                     </td>
                                 </tr>
                             </tbody>
-                        </table>``
+                        </table>
                     </div>
                     <div className="footer">
                         <div className="innerFooter">
