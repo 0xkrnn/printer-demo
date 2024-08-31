@@ -1,0 +1,140 @@
+/* Overlay style */
+
+
+/* Container style */
+.container {
+    display: block;
+}
+
+/* Header style */
+.header {
+    text-align: center;
+}
+
+
+/* Title style */
+.title {
+    border-bottom: 2px solid blue;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Split container style */
+.splitContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    line-height: 5px;
+}
+
+/* Left column style */
+.leftColumn {
+    text-align: left;
+}
+
+/* Right column style */
+.rightColumn {
+    text-align: right;
+}
+
+/* Table container style */
+.tableContainer {
+    margin-bottom: 20px;
+}
+
+/* Table style */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Table header style */
+.th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    background-color: #f4f4f4;
+}
+
+/* Table cell style */
+.td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Total style */
+.total {
+    font-weight: bold;
+    background-color: #f4f4f4;
+}
+
+/* Footer style */
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+/* Inner footer style */
+.innerFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    /* border: 1px solid red; */
+}
+
+/* Footer left style */
+.footerLeft {
+    text-align: left;
+}
+
+/* Footer right style */
+.footerRight {
+    text-align: right;
+}
+
+/* Button style */
+.button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Print-specific styles */
+.printContainer {
+    max-width: 17.6cm;
+    max-height: 25cm;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+@page {
+    size: B5;
+    margin: 1mm;
+}
+
+@media print {
+    body {
+        margin: 0;
+        /* B5 height */
+    }
+
+    .container {
+        padding: 0;
+        width: 176mm;
+        height: 250mm;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+}
